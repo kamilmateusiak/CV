@@ -9,13 +9,16 @@
 </head>
 <body>
   <div id="container">
-    <div id="foto"><img src="./images/Zdjęcie do CV.jpg" alt="foto">
+    <!-- please use meaningful alt attributes - "Michał Banachiewicz photo" would be much better   -->
+    <div id="foto"><img src="./images/Zdjęcie do CV.jpg" alt="foto"> 
     </div>
     <div id="name"><h1 id="surname">Michał Banachiewicz</h1>
     <p>E-mail: <strong>banachiewicz.michal@gmail.com</strong><br>
       Telefon: <strong>536 303 681</strong></p>
     </div>
+    <!-- use class attribute to style elements, id is much better when used in JavaScript (ie. to find the element) or when you need to define a html bookmark (to scroll to the section if someone visits link with #section at the end -->
     <div id="right-side">
+      <!-- definetely something bad happened here, maybe you meant div instead of h2?  -->
       <h2>
         <h2 id="work_experience">Doświadczenie zawodowe</h2>
         <p>
@@ -23,6 +26,7 @@
           Truvant Europe Sp z o.o.<br>
           Wrocław Oddział: Wrocław<br>
         </p>
+        <!-- what do you thing about rendering list items with JavaScript for practice? It could be a good exercise  -->
         <ul>
           <li>Kontrola stanów magazynowych</li>
           <li>Inwentaryzacje cykliczne</li>
@@ -135,9 +139,12 @@
       <h2 id="projekty">Projekty</h2>
         <a target="_blank" href="https://banachiewicz.github.io/CV/">CV M.Banachiewicz</a>     
     </div>
+    <!-- why do you need this div wrapping footer element? can't you use only the footer? -->
     <div id="footer">
       <footer>
+        <!-- small tag should be used ie. in paragraph, not as the wrapper for other content - use css styles instead -->
         <small>
+          <!-- is this at the same level of importance as other h2 headings? Definetely not. Please use h4 or other heading -->
           <h2 id="clause">Klauzula</h2>
           <p>
             Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
