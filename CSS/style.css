@@ -2,15 +2,23 @@ body {
   background-color: lightgray;
 }
 #container {
+  /* because of this width the page is not responsive and looks bad on mobile devices.
+  You should use the combination of two styles here (+ media query for smaller devices):
+  width: 100%;
+  max-width: 1200px;
+  */
   width: 1200px;
+  /* height style is not needed imho */
   height: auto;
   margin-left: auto;
   margin-right: auto;
   background-color: #fff;
 }
 #foto {
+  /* those days no1 is using float styling, check out flex box styling (https://flexboxfroggy.com/) - it would be much easier and is vastly used in new projects  */
   float: left;
   width: 200px;
+  /* instead of defining margins for every major element just add some ".wrapper" div inside .container and define the margins on that element for all of the content */
   margin-left: 100px;
   margin-top: 50px;
 }
@@ -36,6 +44,7 @@ body {
   margin-left: 100px;
   margin-right: 100px;
 }
+/* Does it make sense to style by ids here? Just define a class like `.primary-text` and use it when you need the style */
 #surname,
 #work_experience,
 #education,
@@ -55,3 +64,7 @@ body {
 a {
   color: grey;
 }
+
+/* flexbox is a must for frontend developer, please re-style the page. You can also check out grid: https://css-tricks.com/snippets/css/complete-guide-grid/ - it's
+a different styling convention but it's also popular nowadays. Floats usually require a lot of hacks to work correctly and because of that noone is using it anymore
+*/
